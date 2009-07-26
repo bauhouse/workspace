@@ -8,12 +8,12 @@
 		public $dsParamORDER = 'asc';
 		public $dsParamLIMIT = '999';
 		public $dsParamREDIRECTONEMPTY = 'no';
-		public $dsParamREQUIREDPARAM = '$ds-article';
+		public $dsParamREQUIREDPARAM = '$ds-articles';
 		public $dsParamSORT = 'date';
 		public $dsParamSTARTPAGE = '1';
 		
 		public $dsParamFILTERS = array(
-				'39' => '{$ds-article}',
+				'14' => '{$ds-articles}',
 		);
 		
 		public $dsParamINCLUDEDELEMENTS = array(
@@ -27,22 +27,22 @@
 
 		public function __construct(&$parent, $env=NULL, $process_params=true){
 			parent::__construct($parent, $env, $process_params);
-			$this->_dependencies = array('$ds-article');
+			$this->_dependencies = array('$ds-articles');
 		}
 		
 		public function about(){
 			return array(
 					 'name' => 'Comments',
 					 'author' => array(
-							'name' => 'Allen Chang',
-							'website' => 'http://symphony-203.local:8888',
-							'email' => 'allen@chaoticpattern.com'),
+							'name' => 'Stephen Bau',
+							'website' => 'http://home/sym/fluidgrids',
+							'email' => 'bauhouse@gmail.com'),
 					 'version' => '1.0',
-					 'release-date' => '2009-06-24T01:23:05+00:00');	
+					 'release-date' => '2009-07-01T14:02:32+00:00');	
 		}
 		
 		public function getSource(){
-			return '9';
+			return '4';
 		}
 		
 		public function allowEditorToParse(){
