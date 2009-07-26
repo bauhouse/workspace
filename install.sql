@@ -269,9 +269,10 @@ CREATE TABLE `tbl_entries_data_17` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_17` ***
+INSERT INTO `tbl_entries_data_17` (`id`, `entry_id`, `handle`, `value`) VALUES (1, 5, 'allen-chang', 'Allen Chang');
 
 -- *** STRUCTURE: `tbl_entries_data_18` ***
 DROP TABLE IF EXISTS `tbl_entries_data_18`;
@@ -284,9 +285,10 @@ CREATE TABLE `tbl_entries_data_18` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_18` ***
+INSERT INTO `tbl_entries_data_18` (`id`, `entry_id`, `handle`, `value`) VALUES (1, 5, 'allen-chaoticpatterncom', 'allen@chaoticpattern.com');
 
 -- *** STRUCTURE: `tbl_entries_data_19` ***
 DROP TABLE IF EXISTS `tbl_entries_data_19`;
@@ -299,9 +301,10 @@ CREATE TABLE `tbl_entries_data_19` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_19` ***
+INSERT INTO `tbl_entries_data_19` (`id`, `entry_id`, `handle`, `value`) VALUES (1, 5, 'general-enquiry', 'General Enquiry');
 
 -- *** STRUCTURE: `tbl_entries_data_2` ***
 DROP TABLE IF EXISTS `tbl_entries_data_2`;
@@ -329,9 +332,10 @@ CREATE TABLE `tbl_entries_data_20` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   FULLTEXT KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_20` ***
+INSERT INTO `tbl_entries_data_20` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (1, 5, 'This is a test message to the guys in Azeroth.', 'This is a test message to the guys in Azeroth.');
 
 -- *** STRUCTURE: `tbl_entries_data_21` ***
 DROP TABLE IF EXISTS `tbl_entries_data_21`;
@@ -491,6 +495,7 @@ INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `cr
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (2, 1, 1, '2009-07-26 10:21:41', '2009-07-26 17:21:41');
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (3, 2, 1, '2009-07-26 14:49:03', '2009-07-26 21:49:03');
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (4, 1, 1, '2009-07-26 14:57:37', '2009-07-26 21:57:37');
+INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (5, 5, 0, '2009-07-26 15:06:01', '2009-07-26 22:06:01');
 
 -- *** DATA: `tbl_extensions` ***
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (1, 'debugdevkit', 'enabled', 1);
