@@ -430,10 +430,11 @@ CREATE TABLE `tbl_entries_data_6` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_6` ***
 INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `handle`, `value`) VALUES (1, 1, 'symphony', 'Symphony');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 3, 'entertainment', 'Entertainment');
 
 -- *** STRUCTURE: `tbl_entries_data_7` ***
 DROP TABLE IF EXISTS `tbl_entries_data_7`;
@@ -445,10 +446,11 @@ CREATE TABLE `tbl_entries_data_7` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   FULLTEXT KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_7` ***
 INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (1, 1, 'A wise woman said to me once, \"If you\'re not using Symphony to publish your content on the web, then you\'re just a wild chipmunk. Get with the times and help me milk this cow.\"', '<p>A wise woman said to me once, &#8220;If you&#8217;re not using Symphony to publish your content on the web, then you&#8217;re just a wild chipmunk. Get with the times and help me milk this cow.&#8221;</p>\n');
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (2, 3, 'Everyday, 8 hours of one\'s life is taken up by sleep, 8 with work and another 4 to procrastination. The remaining 4 hours is a precious one. Use it for entertainment.', '<p>Everyday, 8 hours of one&#8217;s life is taken up by sleep, 8 with work and another 4 to procrastination. The remaining 4 hours is a precious one. Use it for entertainment.</p>\n');
 
 -- *** STRUCTURE: `tbl_entries_data_8` ***
 DROP TABLE IF EXISTS `tbl_entries_data_8`;
@@ -482,6 +484,7 @@ CREATE TABLE `tbl_entries_data_9` (
 -- *** DATA: `tbl_entries` ***
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (1, 2, 1, '2009-07-26 02:30:49', '2009-07-26 09:30:49');
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (2, 1, 1, '2009-07-26 10:21:41', '2009-07-26 17:21:41');
+INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (3, 2, 1, '2009-07-26 14:49:03', '2009-07-26 21:49:03');
 
 -- *** DATA: `tbl_extensions` ***
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (1, 'debugdevkit', 'enabled', 1);
