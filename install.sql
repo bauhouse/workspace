@@ -439,12 +439,13 @@ CREATE TABLE `tbl_entries_data_6` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_6` ***
 INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `handle`, `value`) VALUES (1, 1, 'symphony', 'Symphony');
 INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 3, 'entertainment', 'Entertainment');
 INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 6, 'health', 'Health');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `handle`, `value`) VALUES (4, 7, 'firefly', 'Firefly');
 
 -- *** STRUCTURE: `tbl_entries_data_7` ***
 DROP TABLE IF EXISTS `tbl_entries_data_7`;
@@ -456,12 +457,13 @@ CREATE TABLE `tbl_entries_data_7` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   FULLTEXT KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_7` ***
 INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (1, 1, 'A wise woman said to me once, \"If you\'re not using Symphony to publish your content on the web, then you\'re just a wild chipmunk. Get with the times and help me milk this cow.\"', '<p>A wise woman said to me once, &#8220;If you&#8217;re not using Symphony to publish your content on the web, then you&#8217;re just a wild chipmunk. Get with the times and help me milk this cow.&#8221;</p>\n');
 INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (2, 3, 'Everyday, 8 hours of one\'s life is taken up by sleep, 8 with work and another 4 to procrastination. The remaining 4 hours is a precious one. Use it for entertainment.', '<p>Everyday, 8 hours of one&#8217;s life is taken up by sleep, 8 with work and another 4 to procrastination. The remaining 4 hours is a precious one. Use it for entertainment.</p>\n');
 INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (3, 6, 'Two things that are in fashion today: health and climate issues. The kids are raving about good health these days. Apparently it\'s a positive thing.', '<p>Two things that are in fashion today: health and climate issues. The kids are raving about good health these days. Apparently it&#8217;s a positive thing.</p>\n');
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (4, 7, 'This is my sneaky way of advertising the best television show ever. Watch it for the funny.', '<p>This is my sneaky way of advertising the best television show ever. Watch it for the funny.</p>\n');
 
 -- *** STRUCTURE: `tbl_entries_data_8` ***
 DROP TABLE IF EXISTS `tbl_entries_data_8`;
@@ -499,6 +501,7 @@ INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `cr
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (4, 1, 1, '2009-07-26 14:57:37', '2009-07-26 21:57:37');
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (5, 5, 0, '2009-07-26 15:06:01', '2009-07-26 22:06:01');
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (6, 2, 1, '2009-07-26 15:13:03', '2009-07-26 22:13:03');
+INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (7, 2, 1, '2009-07-26 15:16:41', '2009-07-26 22:16:41');
 
 -- *** DATA: `tbl_extensions` ***
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (1, 'debugdevkit', 'enabled', 1);
