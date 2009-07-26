@@ -13,8 +13,11 @@ The Spectrum workspace is a modified workspace for Symphony 2.0.4. The main diff
 - data-sources/data.notes.php
 - data-sources/data.rss_articles.php
 - data-sources/data.website_owner.php
+- events/event.publish_article.php
+- events/event.save_comment.php
+- events/event.save_message.php
 
-All the data sources point to the same sections, but these now have different IDs, since everything was rebuilt from the ground up. (I know, it's pretty lame, but I like ID numbers starting from 1 for everything.) 
+All the data sources and events point to the same sections, but these now have different IDs, since everything was rebuilt from the ground up. (I know, it's pretty lame, but I like ID numbers starting from 1 for everything.) 
 
 - CSS and images are not included
 - No entries have been created
