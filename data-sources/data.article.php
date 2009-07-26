@@ -14,8 +14,8 @@
 		public $dsParamSTARTPAGE = '1';
 		
 		public $dsParamFILTERS = array(
-				'26' => '{$entry}',
-				'30' => 'yes',
+				'1' => '{$entry}',
+				'5' => 'yes',
 		);
 		
 		public $dsParamINCLUDEDELEMENTS = array(
@@ -34,15 +34,15 @@
 			return array(
 					 'name' => 'Article',
 					 'author' => array(
-							'name' => 'Allen Chang',
-							'website' => 'http://symphony-203.local:8888',
-							'email' => 'allen@chaoticpattern.com'),
+							'name' => 'Stephen Bau',
+							'website' => 'http://home/sym/fluidgrids',
+							'email' => 'bauhouse@gmail.com'),
 					 'version' => '1.0',
-					 'release-date' => '2009-06-24T00:58:54+00:00');	
+					 'release-date' => '2009-07-01T17:22:06+00:00');	
 		}
 		
 		public function getSource(){
-			return '6';
+			return '1';
 		}
 		
 		public function allowEditorToParse(){

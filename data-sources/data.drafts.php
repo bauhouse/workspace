@@ -7,14 +7,14 @@
 		public $dsParamROOTELEMENT = 'drafts';
 		public $dsParamORDER = 'desc';
 		public $dsParamLIMIT = '999';
-		public $dsParamREDIRECTONEMPTY = 'yes';
+		public $dsParamREDIRECTONEMPTY = 'no';
 		public $dsParamPARAMOUTPUT = 'system:id';
 		public $dsParamSORT = 'date';
 		public $dsParamSTARTPAGE = '1';
 		
 		public $dsParamFILTERS = array(
-				'26' => '{$entry}',
-				'30' => 'no',
+				'1' => '{$entry}',
+				'5' => 'yes',
 		);
 		
 		public $dsParamINCLUDEDELEMENTS = array(
@@ -33,15 +33,15 @@
 			return array(
 					 'name' => 'Drafts',
 					 'author' => array(
-							'name' => 'Allen Chang',
-							'website' => 'http://symphony-203.local:8888',
-							'email' => 'allen@chaoticpattern.com'),
+							'name' => 'Stephen Bau',
+							'website' => 'http://home/sym/fluidgrids',
+							'email' => 'bauhouse@gmail.com'),
 					 'version' => '1.0',
-					 'release-date' => '2009-06-24T01:18:45+00:00');	
+					 'release-date' => '2009-07-01T13:59:09+00:00');	
 		}
 		
 		public function getSource(){
-			return '6';
+			return '1';
 		}
 		
 		public function allowEditorToParse(){
