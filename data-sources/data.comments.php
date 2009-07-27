@@ -8,12 +8,12 @@
 		public $dsParamORDER = 'asc';
 		public $dsParamLIMIT = '999';
 		public $dsParamREDIRECTONEMPTY = 'no';
-		public $dsParamREQUIREDPARAM = '$ds-articles';
-		public $dsParamSORT = 'date';
+		public $dsParamREQUIREDPARAM = '$ds-article';
+		public $dsParamSORT = 'system:id';
 		public $dsParamSTARTPAGE = '1';
 		
 		public $dsParamFILTERS = array(
-				'14' => '{$ds-articles}',
+				'14' => '{$ds-article}',
 		);
 		
 		public $dsParamINCLUDEDELEMENTS = array(
@@ -21,24 +21,23 @@
 				'email',
 				'website',
 				'date',
-				'comment',
-				'authorised'
+				'comment: formatted'
 		);
 
 		public function __construct(&$parent, $env=NULL, $process_params=true){
 			parent::__construct($parent, $env, $process_params);
-			$this->_dependencies = array('$ds-articles');
+			$this->_dependencies = array('$ds-article');
 		}
 		
 		public function about(){
 			return array(
 					 'name' => 'Comments',
 					 'author' => array(
-							'name' => 'Stephen Bau',
-							'website' => 'http://home/sym/fluidgrids',
-							'email' => 'bauhouse@gmail.com'),
+							'name' => 'Allen Chang',
+							'website' => 'http://symphony-cms.com',
+							'email' => 'allen@symphony-cms.com'),
 					 'version' => '1.0',
-					 'release-date' => '2009-07-01T14:02:32+00:00');	
+					 'release-date' => '2009-07-27T05:14:29+00:00');	
 		}
 		
 		public function getSource(){

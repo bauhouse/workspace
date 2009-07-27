@@ -29,11 +29,11 @@
 			return array(
 					 'name' => 'Website Owner',
 					 'author' => array(
-							'name' => 'Stephen Bau',
-							'website' => 'http://home/sym/fluidgrids',
-							'email' => 'bauhouse@gmail.com'),
+							'name' => 'Allen Chang',
+							'website' => 'http://symphony-cms.com',
+							'email' => 'allen@symphony-cms.com'),
 					 'version' => '1.0',
-					 'release-date' => '2009-07-01T14:05:33+00:00');	
+					 'release-date' => '2009-07-27T05:18:09+00:00');	
 		}
 		
 		public function getSource(){

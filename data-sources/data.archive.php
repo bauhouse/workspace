@@ -9,7 +9,7 @@
 		public $dsParamGROUP = '3';
 		public $dsParamLIMIT = '100';
 		public $dsParamREDIRECTONEMPTY = 'no';
-		public $dsParamSORT = 'date';
+		public $dsParamSORT = 'system:id';
 		public $dsParamSTARTPAGE = '1';
 		
 		public $dsParamFILTERS = array(
@@ -31,11 +31,11 @@
 			return array(
 					 'name' => 'Archive',
 					 'author' => array(
-							'name' => 'Stephen Bau',
-							'website' => 'http://home/sym/fluidgrids',
-							'email' => 'bauhouse@gmail.com'),
+							'name' => 'Allen Chang',
+							'website' => 'http://symphony-cms.com',
+							'email' => 'allen@symphony-cms.com'),
 					 'version' => '1.0',
-					 'release-date' => '2009-07-01T14:00:15+00:00');	
+					 'release-date' => '2009-07-27T05:12:12+00:00');	
 		}
 		
 		public function getSource(){

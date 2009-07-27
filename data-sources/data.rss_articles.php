@@ -8,7 +8,7 @@
 		public $dsParamORDER = 'desc';
 		public $dsParamLIMIT = '20';
 		public $dsParamREDIRECTONEMPTY = 'no';
-		public $dsParamSORT = 'date';
+		public $dsParamSORT = 'system:id';
 		public $dsParamSTARTPAGE = '1';
 		public $dsParamHTMLENCODE = 'yes';
 		
@@ -18,7 +18,7 @@
 		
 		public $dsParamINCLUDEDELEMENTS = array(
 				'title',
-				'body',
+				'body: formatted',
 				'date'
 		);
 
@@ -31,11 +31,11 @@
 			return array(
 					 'name' => 'RSS Articles',
 					 'author' => array(
-							'name' => 'Stephen Bau',
-							'website' => 'http://home/sym/fluidgrids',
-							'email' => 'bauhouse@gmail.com'),
+							'name' => 'Allen Chang',
+							'website' => 'http://symphony-cms.com',
+							'email' => 'allen@symphony-cms.com'),
 					 'version' => '1.0',
-					 'release-date' => '2009-07-01T14:04:41+00:00');	
+					 'release-date' => '2009-07-27T05:17:46+00:00');	
 		}
 		
 		public function getSource(){

@@ -6,38 +6,39 @@
 		
 		public $dsParamROOTELEMENT = 'article-images';
 		public $dsParamORDER = 'asc';
-		public $dsParamLIMIT = '20';
+		public $dsParamLIMIT = '30';
 		public $dsParamREDIRECTONEMPTY = 'no';
 		public $dsParamSORT = 'system:id';
 		public $dsParamSTARTPAGE = '1';
 		
 		public $dsParamFILTERS = array(
-				'22' => '{$ds-homepage-article:$ds-articles:$ds-drafts}',
+				'17' => '{$ds-homepage-articles:$ds-article:$ds-drafts}',
 		);
 		
 		public $dsParamINCLUDEDELEMENTS = array(
 				'image',
-				'description'
+				'article',
+				'description: formatted'
 		);
 
 		public function __construct(&$parent, $env=NULL, $process_params=true){
 			parent::__construct($parent, $env, $process_params);
-			$this->_dependencies = array('$ds-homepage-article', '$ds-articles', '$ds-drafts');
+			$this->_dependencies = array('$ds-homepage-articles', '$ds-article', '$ds-drafts');
 		}
 		
 		public function about(){
 			return array(
 					 'name' => 'Article Images',
 					 'author' => array(
-							'name' => 'Stephen Bau',
-							'website' => 'http://home/sym/fluidgrids',
-							'email' => 'bauhouse@gmail.com'),
+							'name' => 'Allen Chang',
+							'website' => 'http://symphony-cms.com',
+							'email' => 'allen@symphony-cms.com'),
 					 'version' => '1.0',
-					 'release-date' => '2009-07-01T13:56:45+00:00');	
+					 'release-date' => '2009-07-27T05:13:31+00:00');	
 		}
 		
 		public function getSource(){
-			return '6';
+			return '5';
 		}
 		
 		public function allowEditorToParse(){
