@@ -13,6 +13,7 @@
 	indent="yes" />
 
 <xsl:variable name="is-logged-in" select="/data/events/login-info/@logged-in"/>
+<xsl:variable name="member" select="/data/events/member-login-info"/>
 
 <xsl:template match="/">
 

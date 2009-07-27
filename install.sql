@@ -445,9 +445,10 @@ CREATE TABLE `tbl_entries_data_23` (
   KEY `entry_id` (`entry_id`),
   FULLTEXT KEY `value` (`value`),
   FULLTEXT KEY `value_formatted` (`value_formatted`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_23` ***
+INSERT INTO `tbl_entries_data_23` (`id`, `entry_id`, `handle`, `value`, `value_formatted`) VALUES (4, 7, 'john-smith', 'John Smith', 'John Smith');
 
 -- *** STRUCTURE: `tbl_entries_data_24` ***
 DROP TABLE IF EXISTS `tbl_entries_data_24`;
@@ -460,9 +461,10 @@ CREATE TABLE `tbl_entries_data_24` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_24` ***
+INSERT INTO `tbl_entries_data_24` (`id`, `entry_id`, `handle`, `value`) VALUES (4, 7, 'john', 'John');
 
 -- *** STRUCTURE: `tbl_entries_data_25` ***
 DROP TABLE IF EXISTS `tbl_entries_data_25`;
@@ -475,9 +477,10 @@ CREATE TABLE `tbl_entries_data_25` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_25` ***
+INSERT INTO `tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (4, 7, 'smith', 'Smith');
 
 -- *** STRUCTURE: `tbl_entries_data_26` ***
 DROP TABLE IF EXISTS `tbl_entries_data_26`;
@@ -489,9 +492,10 @@ CREATE TABLE `tbl_entries_data_26` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `username` (`username`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_26` ***
+INSERT INTO `tbl_entries_data_26` (`id`, `entry_id`, `username`, `password`) VALUES (4, 7, 'member', '4297f44b13955235245b2497399d7a93');
 
 -- *** STRUCTURE: `tbl_entries_data_27` ***
 DROP TABLE IF EXISTS `tbl_entries_data_27`;
@@ -501,9 +505,10 @@ CREATE TABLE `tbl_entries_data_27` (
   `role_id` int(11) unsigned NOT NULL,
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`,`role_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_27` ***
+INSERT INTO `tbl_entries_data_27` (`id`, `entry_id`, `role_id`) VALUES (4, 7, 2);
 
 -- *** STRUCTURE: `tbl_entries_data_28` ***
 DROP TABLE IF EXISTS `tbl_entries_data_28`;
@@ -516,9 +521,10 @@ CREATE TABLE `tbl_entries_data_28` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_28` ***
+INSERT INTO `tbl_entries_data_28` (`id`, `entry_id`, `handle`, `value`) VALUES (4, 7, 'john-examplecom', 'john@example.com');
 
 -- *** STRUCTURE: `tbl_entries_data_3` ***
 DROP TABLE IF EXISTS `tbl_entries_data_3`;
@@ -640,6 +646,7 @@ INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `cr
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (4, 1, 1, '2009-07-27 15:06:00', '2009-07-27 05:06:00');
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (5, 3, 1, '2009-07-27 15:06:19', '2009-07-27 05:06:19');
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (6, 3, 1, '2009-07-27 15:06:31', '2009-07-27 05:06:31');
+INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (7, 7, 0, '2009-07-27 15:01:54', '2009-07-27 22:01:54');
 
 -- *** DATA: `tbl_extensions` ***
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (1, 'debugdevkit', 'enabled', 1);
@@ -714,6 +721,9 @@ INSERT INTO `tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `d
 INSERT INTO `tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (6, NULL, 'RSS', 'rss', NULL, NULL, 'rss_articles', NULL, 6);
 INSERT INTO `tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (7, NULL, 'Maintenance', 'maintenance', NULL, NULL, NULL, NULL, 7);
 INSERT INTO `tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (8, NULL, 'Page Not Found', 'page-not-found', NULL, NULL, NULL, NULL, 8);
+INSERT INTO `tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (9, NULL, 'Register', 'register', NULL, NULL, 'navigation', 'login,register_member', 9);
+INSERT INTO `tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (10, NULL, 'Login', 'login', NULL, 'action', 'navigation', 'forgot_password,login', 10);
+INSERT INTO `tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (11, NULL, 'Members', 'members', NULL, NULL, 'navigation', 'forgot_password,login', 11);
 
 -- *** DATA: `tbl_pages_types` ***
 INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (1, 1, 'index');
@@ -726,6 +736,9 @@ INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (7, 7, 'hidden');
 INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (8, 7, 'maintenance');
 INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (9, 8, 404);
 INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (10, 8, 'hidden');
+INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (16, 9, 'hidden');
+INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (18, 11, 'members');
+INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (19, 10, 'hidden');
 
 -- *** DATA: `tbl_sections` ***
 INSERT INTO `tbl_sections` (`id`, `name`, `handle`, `sortorder`, `entry_order`, `entry_order_direction`, `hidden`, `navigation_group`) VALUES (1, 'Articles', 'articles', 0, NULL, 'asc', 'no', 'Content');

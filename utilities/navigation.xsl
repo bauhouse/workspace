@@ -9,6 +9,9 @@
 			<li><a href="{$root}/symphony/">Admin</a></li>
 			<li><a href="?debug">Debug</a></li>
 		</xsl:if>
+		<xsl:if test="$member/@logged-in = 'true'">
+			<li><a href="?member-action=logout">Hello, <xsl:value-of select="$member/first-name"/> (Logout)</a></li>
+		</xsl:if>
 	</ul>
 </xsl:template>
 
