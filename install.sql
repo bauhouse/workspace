@@ -753,3 +753,43 @@ INSERT INTO `tbl_sections` (`id`, `name`, `handle`, `sortorder`, `entry_order`, 
 INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (4, 1, 1, 4, 14, 'no');
 INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (2, 1, 1, 5, 17, 'no');
 INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (3, 2, 6, 1, 4, 'no');
+
+-- *** DATA: `tbl_members_login_tokens` ***
+
+-- *** DATA: `tbl_members_roles` ***
+INSERT INTO `tbl_members_roles` (`id`, `name`, `email_subject`, `email_body`) VALUES (1, 'Guest', NULL, NULL);
+INSERT INTO `tbl_members_roles` (`id`, `name`, `email_subject`, `email_body`) VALUES (2, 'Member', NULL, NULL);
+
+-- *** DATA: `tbl_members_roles_event_permissions` ***
+INSERT INTO `tbl_members_roles_event_permissions` (`id`, `role_id`, `event`, `action`, `allow`) VALUES (19, 1, 'save_message', 'add', 'yes');
+INSERT INTO `tbl_members_roles_event_permissions` (`id`, `role_id`, `event`, `action`, `allow`) VALUES (18, 1, 'save_comment', 'add', 'yes');
+INSERT INTO `tbl_members_roles_event_permissions` (`id`, `role_id`, `event`, `action`, `allow`) VALUES (16, 1, 'publish_article', 'add', 'yes');
+INSERT INTO `tbl_members_roles_event_permissions` (`id`, `role_id`, `event`, `action`, `allow`) VALUES (17, 1, 'register_member', 'add', 'yes');
+INSERT INTO `tbl_members_roles_event_permissions` (`id`, `role_id`, `event`, `action`, `allow`) VALUES (20, 2, 'publish_article', 'add', 'yes');
+INSERT INTO `tbl_members_roles_event_permissions` (`id`, `role_id`, `event`, `action`, `allow`) VALUES (21, 2, 'register_member', 'add', 'yes');
+INSERT INTO `tbl_members_roles_event_permissions` (`id`, `role_id`, `event`, `action`, `allow`) VALUES (22, 2, 'save_comment', 'add', 'yes');
+INSERT INTO `tbl_members_roles_event_permissions` (`id`, `role_id`, `event`, `action`, `allow`) VALUES (23, 2, 'save_message', 'add', 'yes');
+
+-- *** DATA: `tbl_members_roles_page_permissions` ***
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (56, 1, 8, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (55, 1, 11, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (54, 1, 7, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (53, 1, 10, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (52, 1, 1, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (51, 1, 3, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (50, 1, 2, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (49, 1, 4, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (48, 1, 5, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (57, 1, 9, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (58, 1, 6, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (59, 2, 5, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (60, 2, 4, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (61, 2, 2, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (62, 2, 3, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (63, 2, 1, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (64, 2, 10, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (65, 2, 7, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (66, 2, 11, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (67, 2, 8, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (68, 2, 9, 'yes');
+INSERT INTO `tbl_members_roles_page_permissions` (`id`, `role_id`, `page_id`, `allow`) VALUES (69, 2, 6, 'yes');
