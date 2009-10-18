@@ -42,7 +42,7 @@ d/n/y t => 21/09/81 6:30pm
   <xsl:param name="format" select="'D M, Y'"/>
 
   <xsl:choose>
-    <xsl:when test="string-length($format) &lt;= 10">
+    <xsl:when test="string-length($format) &lt;= 13">
       <xsl:call-template name="date-controller">
         <xsl:with-param name="date" select="$date"/>
         <xsl:with-param name="format" select="$format"/>
@@ -178,7 +178,7 @@ d/n/y t => 21/09/81 6:30pm
     <xsl:choose>
       <xsl:when test="(substring($day,2) = 1) and not(substring($day,1,1) = 1)">st</xsl:when>
       <xsl:when test="(substring($day,2) = 2) and not(substring($day,1,1) = 1)">nd</xsl:when>
-      <xsl:when test="(substring($day,2) = 3) and not(substring($day,1,1) = 1)">rd</xsl:when>
+      <xsl:when test="(substring($day,2) = 3) and not(substring($day,1,1) = 1)">Rd</xsl:when>
       <xsl:otherwise>th</xsl:otherwise>
     </xsl:choose>
   </xsl:param>
